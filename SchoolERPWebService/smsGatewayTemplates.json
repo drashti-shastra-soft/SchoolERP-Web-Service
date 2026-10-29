@@ -1,0 +1,42 @@
+{
+  "SmsGatewayTemplates": [
+    {
+      "SmsType": "Twilio SMS Gateway",
+      "HttpMethod": "POST",
+      "RequestUrl": "https://api.twilio.com/2010-04-01/Accounts/{{TWILIO_ACCOUNT_SID}}/Messages.json",
+      "ContentType": "application/x-www-form-urlencoded",
+      "Headers": {
+        "Authorization": "Basic {{BASIC_AUTH_TOKEN}}"
+      },
+      "BasicAuth": {
+        "UsernameField": "TWILIO_ACCOUNT_SID",
+        "PasswordField": "AUTHENTICATION_TOKEN"
+      },
+      "BodyParams": {
+        "From": "{{REGISTERED_PHONE_NUMBER}}",
+        "To": "{{ToPhone}}",
+        "Body": "{{Message}}"
+      },
+      "SuccessPath": "status",
+      "SuccessValue": "queued",
+      "MessagePath": "error_message"
+    },
+    {
+      "SmsType": "Clickatell Sms Gateway",
+      "HttpMethod": "POST",
+      "RequestUrl": "https://platform.clickatell.com/messages",
+      "ContentType": "application/json",
+      "Headers": {
+        "Authorization": "{{CLICKATELL_API_KEY}}"
+      },
+      "BodyParams": {
+        "content": "{{Message}}",
+        "to": "{{ToPhone}}"
+      },
+      "BodyArrayParams": [ "to" ],
+      "SuccessPath": "messages[0].accepted",
+      "SuccessValue": "true",
+      "MessagePath": "messages[0].error"
+    }
+  ]
+}

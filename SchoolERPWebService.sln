@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37111.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolERPWebService", "SchoolERPWebService\SchoolERPWebService.csproj", "{649586D9-9C98-3D90-C446-6A3051E8372E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolERPWebService.Domain", "SchoolERPWebService.Domain\SchoolERPWebService.Domain.csproj", "{3BCBAFC4-411F-B48F-2ED5-CAA2C866882E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{649586D9-9C98-3D90-C446-6A3051E8372E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{649586D9-9C98-3D90-C446-6A3051E8372E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{649586D9-9C98-3D90-C446-6A3051E8372E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{649586D9-9C98-3D90-C446-6A3051E8372E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BCBAFC4-411F-B48F-2ED5-CAA2C866882E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BCBAFC4-411F-B48F-2ED5-CAA2C866882E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BCBAFC4-411F-B48F-2ED5-CAA2C866882E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BCBAFC4-411F-B48F-2ED5-CAA2C866882E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5C47B8F-0106-420C-8DC8-D375F9316047}
+	EndGlobalSection
+EndGlobal
